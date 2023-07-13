@@ -1,0 +1,129 @@
+\documentclass[14pt, a4paper]{extarticle}
+\include{format}
+\usepackage[14pt]{extsizes} % для того чтобы задать нестандартный 14-ый размер шрифта
+\usepackage{polyglossia} % языковой пакет
+\usepackage{amsmath} % поддержка математических символов
+\usepackage{url} % поддержка url-ссылок
+\usepackage{indentfirst}
+\usepackage[left=3cm,right=1.5cm,top=2cm,bottom=2cm]{geometry} % поля
+\usepackage{setspace}
+%\полуторный интервал
+\usepackage{ragged2e} %выравнивание по ширине
+\setlength{\parindent}{1.25cm} %красная строка
+\begin{document}
+\onehalfspacing
+\setdefaultlanguage[spelling=modern]{russian}
+    \setotherlanguage{english}
+    
+\setmonofont{Times New Roman}
+\setmainfont{Times New Roman} 
+\setromanfont{Times New Roman} 
+\newfontfamily\cyrillicfont{Times New Roman}
+\newfontfamily\cyrillicfont{Times New Roman}
+\begin{titlepage}
+\newpage
+\begin{center}
+\small{МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ \\
+     ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ \\
+     УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \\
+     «СЕВЕРО-ОСЕТИНСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ \\
+     ИМЕНИ КОСТА ЛЕВАНОВИЧА ХЕТАГУРОВА» \\}
+\end{center}
+\vspace {2em}
+\begin{center}
+\small{Факультет математики и компьютерных наук \\
+     Кафедра прикладной математики и информатики \\
+     }
+\end{center}
+\vspace{2em}
+\begin{center}
+\textbf{КУРСОВАЯ РАБОТА} \\ 
+\vspace{2em}
+\textbf{По курсу: Основы и методология программирования} \\
+\end{center}
+\vspace{1.1em}
+\begin{center}
+Тема: «Осетинское лото (языковая игра)»
+\end{center}
+\vspace{3em}
+\begin{flushright}
+      \vbox{%
+\hfill%
+\vbox{%
+\hbox{\textbf{Исполнитель:} cтудент 2-ПМ ОФО}%
+\hbox{Касумян Рафаэль Ефремович}%
+\hbox{\textbf{Руководитель:} Макаренко М.Д.}
+}%
+} 
+\end{flushright}
+\vspace{8em}
+\begin{center}
+Владикавказ 2023 \\
+\end{center}
+\end{titlepage}
+\setcounter{page}{2} % со второй страницы
+\newpage 
+\begin{center}
+    \tableofcontents
+\end{center}
+\newpage
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+\begin{center}
+\section*{Введение}
+\addcontentsline{toc}{section}{Введение}
+\end{center}
+\par Мы живём в Республике Северная Осетия-Алания – одном из \\ многонациональных регионов нашей необъятной страны. Осетинский народ имеет очень богатую историю, свои традиции, обычаи и культуру. Вместе с тем, время не стоит на месте, поэтому многое постепенно забывается, стирается из памяти под воздействием современных реалий. Это отнюдь не благоприятное явление коснулось и осетинского языка - одного из богатейших языков народов Кавказа...
+\newpage
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+
+\begin{center}
+\section*{Глава 1. Теоретическая часть}
+\addcontentsline{toc}{section}{Глава 1. Теоретическая часть}
+\end{center}
+\par Игра, рассчитанная на двух игроков, состоит из трёх раундов, по результатам которых определяется победитель. Первые два из них \\представлены ниже: каждому из игроков будет отведено по клетчатому полю задаваемого в настройках размера, ячейки которых после загрузки будут заполнены изображениями (1. 2 раунды) или словами из осетинского языка (3 раунд). По прошествии времени, задаваемым настраиваемым таймером, в окне будут появляться картинки...
+\newpage
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+
+\begin{center}
+\section*{Глава 2. Практическая часть}
+\addcontentsline{toc}{section}{Глава 2. Практическая часть}
+\end{center}
+\par Работу программы можно разделить на следующие этапы: 
+\begin{enumerate}
+    \item Запоминание имён игроков 
+    \item Подсчёт очков и выявление победителя (в каждом раунде) 
+    \item Демонстрация таблицы с результатами игроков по раундам, выявление победителя всей игры. 
+\end{enumerate}
+\par При создании игры были подгружены изображения, которые должны появляться в таблицах игроков. Для правильной работы с ними был создан класс Word, в который подаётся строковый массив из файла со словами и переводами...
+\newpage
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+
+\begin{center}
+\section*{Заключение}
+\addcontentsline{toc}{section}{Заключение}
+\end{center}
+\par Благодаря данному проекту я освоил компонент DataGridView(таблицу), научился в программе регулировать её размеры, также освоил метод добавления картинок в данную структуру. Помимо этого, я научился работать с классами и самостоятельно продумывать их функционал, добавлять поля, методы и свойства...
+\newpage
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+
+\begin{center}
+\section*{Список литературы}
+\addcontentsline{toc}{section}{Список литературы}
+\end{center}
+\begin{enumerate}
+    \item Сайт Microsoft, обучающий работе с Visual Studio \par \url{https://docs.microsoft.com/ru-ru/dotnet/desktop/winforms/controls/}
+    \item Онлайн форум stack overflow \url{https://ru.stackoverflow.com/}
+    \item Онлайн форум CyberForum.ru \url{https://www.cyberforum.ru/}
+    \item Веб сайт “Хабр” \url{https://habr.com/}
+\end{enumerate}
+\end{document}

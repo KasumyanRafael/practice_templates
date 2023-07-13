@@ -1,0 +1,159 @@
+\documentclass[a4paper,14pt]{article} % определение типа документа ,
+\usepackage[14pt]{extsizes} % для того чтобы задать нестандартный 14-ый размер шрифта
+\usepackage[left=3cm,right=1.5cm,top=2cm,bottom=2cm]{geometry} % поля
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+\usepackage{ragged2e} %выравнивание по ширине
+\usepackage{setspace}
+%\полуторный интервал
+\begin{document}
+\onehalfspacing
+\setlength{\parindent}{1.25cm} %красная строка
+\begin{titlepage}
+\newpage
+\begin{center}
+\small{МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ \\
+     ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ \\ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ 
+     ВЫСШЕГО ОБРАЗОВАНИЯ\\ «СЕВЕРО-ОСЕТИНСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ \\
+     ИМЕНИ КОСТА ЛЕВАНОВИЧА ХЕТАГУРОВА» \\}
+\end{center}
+\vspace {2em}
+\begin{center}
+\small{Факультет математики и компьютерных наук \\
+     Кафедра прикладной математики и информатики \\
+     }
+\end{center}
+\vspace{2em}
+\begin{center}
+\textbf{ВЫПУСКНАЯ КВАЛИФИКАЦИОННАЯ} \\
+\textbf{РАБОТА} \\
+\vspace{2em}
+\textbf{Тема:} Метод опорных векторов
+ \\
+\end{center}
+\vspace{3em}
+\begin{flushright}
+\vbox{%
+\hfill%
+\vbox{%
+\hbox{\textbf{Исполнитель:}}%
+\hbox{Студентка 4 курса ОФО}%
+\hbox{направления подготовки «Прикладная}%
+\hbox{математика и информатика»}
+\hbox{Елоева В.А}
+\vspace{1em}
+\hbox{\textbf{Научный руководитель:}}
+\hbox{к.ф.-м.н. Басаева Е.К.}
+}%
+} 
+
+\end{flushright}
+\vspace{1em}
+\begin{flushleft}
+    \textbf{«Допущена к защите»} \\
+    \vspace {1em}
+Заведующий кафедрой \line(1,0){106}  к.ф.-м.н. Басаева Е.К.
+
+\end{flushleft}
+\vspace{2em}
+\begin{center}
+Владикавказ 2023 \\
+\end{center}
+\end{titlepage}
+\setcounter{page}{2} % со второй страницы
+\newpage 
+\begin{center}
+    \tableofcontents
+\end{center}
+\newpage 
+\newpage
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+
+\begin{center}
+\section*{Введение}
+\addcontentsline{toc}{section}{Введение}
+\end{center}
+\parМетод опорных векторов (Support Vector Machine, SVM) – один из
+популярных методов машинного обучения, который применяется для решения
+задач классификации и регрессии.
+
+Метод опорных векторов (SVM) относится к разделу машинного обучения,
+называемому обучение с учителем или обучение по прецедентам. Существует четыре основных варианта метода опорных векторов:\\
+\begin{enumerate}
+    \item Классификатор с максимальным (жестким) зазором,
+    \item Версия SVM с мягким зазором,
+    \item Ядерная версия, использующая «трюк ядра»,
+    \item Ядерная версия с мягким зазором, совмещающая варианты 1, 2 и 3.
+\end{enumerate}
+\newpage
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+
+\begin{center}
+\section*{Глава 1. Задача классификации}
+\addcontentsline{toc}{section}{Глава 1. Задача классификации}
+\end{center}
+\parКлассификацией называется раздел машинного обучения, посвященный решению
+следующей задачи:\\
+\begin{itemize}
+    \item Имеется множество «объектов» (n-мерных векторов), разделённых,
+некоторым образом, на «классы».
+    \item Задано конечное множество объектов, для которых известно, к каким
+классам они относятся («обучающая выборка»).
+    \item Классовая принадлежность остальных объектов не известна.
+    \item Требуется построить алгоритм, способный классифицировать
+произвольный объект из исходного множества.
+\end{itemize}
+\newpage
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+
+\begin{center}
+\section*{Глава 2. Линейно разделимый случай}
+\addcontentsline{toc}{section}{Глава 2. Линейно разделимый случай}
+\end{center}
+\par Два класса называют линейно отделимыми, если существует хотя бы одна
+гиперплоскость, разделяющая их.
+\newpage
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+
+\begin{center}
+\section*{Глава 3. Ядра и спрямляющие пространства}
+\addcontentsline{toc}{section}{Глава 3. Ядра и спрямляющие пространства}
+\end{center}
+Конструктивные способы построения ядер.
+\begin{enumerate}
+    \item Произвольное скалярное произведение K(x, z) = 〈x, z〉 является ядром.
+    \item Константа K(x, z) = 1 является ядром.
+\end{enumerate} 
+\newpage
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+
+\begin{center}
+\section*{Заключение}
+\addcontentsline{toc}{section}{Заключение}
+\end{center}
+\parОрганизационная структура предприятия может носит линейный характер. Все без исключения работники находятся в подчинении директора предприятия.
+\newpage
+\setcounter{subsection}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+
+\begin{center}
+\section*{Список литературы}
+\addcontentsline{toc}{section}{Список литературы}
+\end{center}
+\begin{enumerate}
+    \item Федеральный закон Российской Федерации от 14.06.1995 г. № 88-ФЗ «О государственной поддержке малого предпринимательства в Российской Федерации» (с последующими изменениями и дополнениями). 
+    \item Стратегический менеджмент: основы стратегического управления / М.А. Чернышев и др. — Ростов-н/Д.: Феникс, 2019.
+\end{enumerate}
+\end{document}
